@@ -8,3 +8,9 @@ ul li {
     width: 200px;
     color:white;
 }
+a:link {
+    color:white;
+}
+a:visited {
+    color: gold;
+}
