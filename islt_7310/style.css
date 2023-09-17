@@ -1,8 +1,45 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url(Montserrat-VariableFont_wght.ttf);
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'Vollkorn';
+    src: url(Vollkorn-VariableFont_wght.ttf);
+}
 h1 {
-    color: #000066;
+    color: white;
+    font-family: 'Montserrat';
+    background-color: #0C2857;
+    border: 2px solid #E0B400;
     display: flex;
     justify-content: center;
     margin: 0;
     padding: 0;
     align-content: flex-start;
+}
+
+section>p::first-letter{
+    Font-size: 1.2rem;
+    font-weight: bold;
+}
+.firstparagraph{
+    text-indent: 0%;
+}
+section>p {
+    text-indent: 2%;
+}
+h2{
+    font-family: 'Montserrat';
+}
+
+p{
+    font-family: 'Vollkorn';
+}
+blockquote {
+    font-family: 'Vollkorn';
+}
+footer>p{
+    font-family:'Montserrat';
+    text-align: right;
 }

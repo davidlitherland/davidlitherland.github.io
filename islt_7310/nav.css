@@ -3,20 +3,23 @@ nav{
     flex-flow:column wrap;
     width: 80px;
 }
+@font-face {
+    font-family: 'Montserrat';
+    src: url(Montserrat-VariableFont_wght.ttf);
+}    
 nav ul {
     list-style-type: none;
     display: flex;
-    border: 2px solid gold;
-    background-color:darkblue;
+    border: 2px solid #E0B400;
+    background-color: #0C2857;
     text-align:left;
     flex-flow:column wrap;
+    font-family: 'Montserrat';
     color:white;
 }
 nav ul li{
     width: 100px;
     position: relative;
-   
-    
 }
 nav ul li:hover ul{
     display: flex;
@@ -28,7 +31,7 @@ nav ul li ul{
     display:none;
 }
 nav ul li a:hover{
-    border: 2px solid gold;
+    border: 2px solid #E0B400;
 }
 
 nav ul li a:link {
@@ -37,7 +40,7 @@ nav ul li a:link {
     
 }
 nav ul li a:visited {
-    color: gold;
+    color: #E0B400;
     text-decoration-line: none;
     
 }
