@@ -1,13 +1,24 @@
-nav{
-    display:flex;
-    flex-flow:column wrap;
-    width: 80px;
-}
+
 @font-face {
     font-family: 'Montserrat';
     src: url(Montserrat-VariableFont_wght.ttf);
 }    
-nav ul {
+
+nav>ul {
+    list-style-type: none;
+    display: flex;
+    text-align:left;
+    flex-flow:column wrap;
+    font-family: 'Montserrat';
+    color:white;
+    width: 10fr;
+    height: 100%;
+    padding-top: 20vh;
+   
+    padding-left: 1vw;
+    margin:0;
+}
+nav>ul>li>ul {
     list-style-type: none;
     display: flex;
     border: 2px solid #E0B400;
@@ -16,6 +27,7 @@ nav ul {
     flex-flow:column wrap;
     font-family: 'Montserrat';
     color:white;
+    width: 5fr;
 }
 nav ul li{
     width: 100px;

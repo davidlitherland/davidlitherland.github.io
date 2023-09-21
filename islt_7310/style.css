@@ -7,39 +7,127 @@
     font-family: 'Vollkorn';
     src: url(Vollkorn-VariableFont_wght.ttf);
 }
-h1 {
-    color: white;
-    font-family: 'Montserrat';
-    background-color: #0C2857;
-    border: 2px solid #E0B400;
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
-    align-content: flex-start;
-}
 
+
+@media only screen and (min-width: 768px) {
+    .wrapper {
+        display: grid;
+        grid-template-columns: .4fr 5fr;
+        grid-template-rows: 5fr 90fr 5fr;
+        margin:0;
+        max-height: 100vh;
+    }
+
+    body {
+        margin:0;
+    }
+
+    header {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 1;
+    }
+
+    nav{
+        grid-column-start: 1; 
+        grid-row-start: 1;  
+        grid-row-end: 4;
+    }
+    img{
+        grid-column-start: 1;
+        grid-row-start: 1;
+    }
+    main {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 4;
+   }
+
+    footer {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 3;
+    }
+    nav{
+        display:flex;
+        height:100%;
+        flex-flow:column wrap;
+        margin:0;
+        background-color: #0C2857;
+    
+    }
+
+    h1 {
+        color: white;
+        font-family: 'Montserrat';
+        background-color: #0C2857;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        height: 15vh;
+        /*align-content: flex-start;*/
+    }
+
+    main {
+        padding-left:2vw;
+        border: 2px solid #E0B400;
+        
+    }
+    .image1 {
+        float: left;
+    }
+    .image2 {
+        float:right;
+    }
+    footer {
+        background-color: #0C2857;
+        position: fixed;
+        bottom: 0;
+        height: 3fr;
+        width: 100%;
+        margin-top: auto;
+        padding: 0;
+        
+    }
+}
 section>p::first-letter{
     Font-size: 1.2rem;
     font-weight: bold;
 }
+
 .firstparagraph{
     text-indent: 0%;
 }
+
 section>p {
     text-indent: 2%;
 }
+
 h2{
+    font-family: 'Montserrat';
+}
+
+h3 {
     font-family: 'Montserrat';
 }
 
 p{
     font-family: 'Vollkorn';
 }
+
 blockquote {
     font-family: 'Vollkorn';
 }
+
+
 footer>p{
     font-family:'Montserrat';
     text-align: right;
+    color:white;
+
 }
