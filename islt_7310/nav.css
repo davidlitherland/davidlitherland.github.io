@@ -4,6 +4,64 @@
     src: url(Montserrat-VariableFont_wght.ttf);
 }    
 
+@media only screen and (max-width: 767px) {
+    nav>ul {
+        list-style-type: none;
+        display: flex;
+        text-align:center;
+        flex-flow:row nowrap;
+        font-family: 'Montserrat';
+        color:white;
+        width: 100vw;
+        height: 5vh;
+        padding-top: 8px;
+        padding-left: 0;
+        margin:0;
+        font-size: small;
+    }
+    nav>ul>li>ul {
+        list-style-type: none;
+        display: flex;
+        background-color: #0C2857;
+        text-align:center;
+        flex-flow:row wrap;
+        font-family: 'Montserrat';
+        color:white;
+        width: 10vw;
+        height: 10vh;
+    }
+    nav ul li{
+        width: 100px;
+        position: relative;
+    }
+    nav ul li:active ul, nav ul li:focus ul{
+        display: flex;
+    }
+    nav ul li ul{
+        position:absolute;
+        top: 32px;
+        width: 100px;
+        padding:0%;
+        justify-content: center;
+        text-align: center;
+        display:none;
+    }
+    nav ul li a:hover, nav ul li a:focus{
+        border: 2px solid #E0B400;
+    }
+    
+    nav ul li a:link {
+        color:white;
+        text-decoration-line: none;
+        
+    }
+    nav ul li a:visited {
+        color: #E0B400;
+        text-decoration-line: none;
+        
+    }
+}
+@media only screen and (min-width: 768px) {
 nav>ul {
     list-style-type: none;
     display: flex;
@@ -55,4 +113,5 @@ nav ul li a:visited {
     color: #E0B400;
     text-decoration-line: none;
     
+}
 }
