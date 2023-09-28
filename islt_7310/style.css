@@ -33,6 +33,18 @@ nav {
     height: 1em;
 }
 
+.footericonbig {
+    position:absolute;
+    width:0px;
+    transition:width 0.3s linear 0s, transform 0.3s linear 0s;
+    z-index: 10;
+}
+
+.footericon:hover + .footericonbig {
+    width: 200px;
+    transform: translate(-200px, -200px)
+}
+
 @media only screen and (max-width: 767px) {
     .wrapper {
         display: grid;
