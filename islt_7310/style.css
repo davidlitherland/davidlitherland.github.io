@@ -8,6 +8,23 @@
     src: url(Vollkorn-VariableFont_wght.ttf);
 }
 
+h2{
+    font-family: 'Montserrat';
+}
+
+h3 {
+    font-family: 'Montserrat';
+}
+
+p{
+    font-family: 'Vollkorn';
+}
+
+blockquote {
+    font-family: 'Vollkorn';
+}
+
+
 @media only screen and (max-width: 767px) {
     .wrapper {
         display: grid;
@@ -234,21 +251,33 @@
     }
 }
 
-
-h2{
-    font-family: 'Montserrat';
-}
-
-h3 {
-    font-family: 'Montserrat';
-}
-
-p{
-    font-family: 'Vollkorn';
-}
-
-blockquote {
-    font-family: 'Vollkorn';
+@media print {
+   *{
+    color: black;
+   }
+    nav {
+        display: none;
+    }
+    h1 {
+        text-align: center;
+        font-family: serif;
+    }
+    h2 {
+        font-family: serif;
+    }
+    h3 {
+        font-family: serif;
+    }
+    .image1 {
+        float:right;
+        width: 100px;
+        height: 100px;
+    }
+    .image2 {
+        float:right;
+        width: 100px;
+        height: 100px;
+    }
 }
 
 
