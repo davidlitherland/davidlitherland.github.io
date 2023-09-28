@@ -278,6 +278,9 @@ blockquote {
         width: 100px;
         height: 100px;
     }
+    @page{
+        margin: 1in;
+    }
 }
 
 
