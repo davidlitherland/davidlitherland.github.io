@@ -23,7 +23,15 @@ p{
 blockquote {
     font-family: 'Vollkorn';
 }
+nav {
+    background-image: url(images/navbackground.png);
+    background-size: cover;
+}
 
+.footericon {
+    width: 1em;
+    height: 1em;
+}
 
 @media only screen and (max-width: 767px) {
     .wrapper {
@@ -115,16 +123,17 @@ blockquote {
         width: 50%;
     }
     footer {
-        background-color: #0C2857;
         position: fixed;
         bottom: 0;
         height: 3fr;
         width: 100%;
         margin-top: auto;
         padding: 0;
-        z-index: 1;
+        z-index: 0;
         font-size: small;
         border-top: solid 2px #E0B400;
+        background-image: url(images/footerbackground.png);
+        background-size: cover;
     }
     footer>p{
         font-family:'Montserrat';
@@ -175,7 +184,7 @@ blockquote {
     }
     main {
         grid-column-start: 2;
-        grid-column-end: 4;
+        grid-column-end: 3;
         grid-row-start: 2;
         grid-row-end: 4;
    }
@@ -228,15 +237,17 @@ blockquote {
         text-indent: 2%;
     }
     footer {
-        background-color: #0C2857;
         position: fixed;
+        border-top: solid 2px #E0B400;
         bottom: 0;
         height: 3fr;
         width: 100%;
         margin-top: auto;
         padding: 0;
         z-index: 1;
-        border-top: solid 2px #E0B400;
+        background-image: url(images/footerbackground.png);
+        background-size: contain;
+        
     }
     footer>p
     {
