@@ -27,7 +27,6 @@ nav {
     background-image: url(images/navbackground.png);
     background-size: cover;
 }
-
 .footericon {
     width: 1em;
     height: 1em;
@@ -38,6 +37,11 @@ nav {
     width:0px;
     transition:width 0.3s linear 0s, transform 0.3s linear 0s;
     z-index: 10;
+}
+
+.video {
+    display: block;
+    margin: 0 auto;
 }
 
 .footericon:hover + .footericonbig {
@@ -198,13 +202,13 @@ nav {
         grid-column-start: 2;
         grid-column-end: 3;
         grid-row-start: 2;
-        grid-row-end: 4;
+        grid-row-end: 3;
    }
 
     footer {
         grid-column-start: 1;
-        grid-column-end: 3;
-        grid-row-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 4;
     }
     nav{
         display:flex;
@@ -238,9 +242,13 @@ nav {
 
     .image1 {
         float: left;
+        width: 200px;
+        height: 200px;
     }
     .image2 {
-        float:right;
+        float: inline-end;
+        width: 200px;
+        height: 200px;
     }
     .firstparagraph{
         text-indent: 0%;
@@ -272,6 +280,7 @@ nav {
         Font-size: 1.2rem;
         font-weight: bold;
     }
+ 
 }
 
 @media print {
