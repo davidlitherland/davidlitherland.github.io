@@ -37,8 +37,10 @@ ul{
 }
 
 h5>ul {
-    font-size: small;
+    font-size: medium;
+    font-weight: normal;
 }
+
 nav {
     background-image: url(images/navbackground.png);
     background-size: cover;
@@ -70,9 +72,9 @@ nav {
     .wrapper {
         display: grid;
         grid-template-columns: 100vw;
-        grid-template-rows: 10vh 5vh 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+        grid-template-rows: 10vh 5vh auto auto auto auto auto auto auto ;
         margin:0;
-        max-height: 100vh;
+        
     }
     body {
         margin:0;
@@ -94,7 +96,56 @@ nav {
     main {
         grid-column-start: 1;
         grid-row-start: 3;
-        grid-row-end: 8;
+        grid-row-end: 9;
+   }
+   .projectdiv1 {
+    grid-column-start: 1;
+    grid-row-start: 4;
+    grid-row-end: 5;
+   }
+ 
+    .projectdiv2 {
+    grid-column-start: 1;
+    grid-row-start: 6;
+    grid-row-end: 7;
+   }
+    .projectdiv3 {
+    grid-column-start: 1;
+    grid-row-start: 8;
+    grid-row-end: 9;
+   }
+
+    .projectimg1 {
+    grid-column-start: 1;
+    grid-row-start: 3;
+    grid-row-end: 4;
+   }
+    .projectimg2 {
+    grid-column-start: 1;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    }
+    .projectimg3 {
+    grid-column-start: 1;
+    grid-row-start: 7;
+    grid-row-end: 8;
+    }
+    .projectdiv1 {
+    grid-column-start: 1;
+    grid-row: 4 / 5;
+   
+   }
+ 
+    .projectdiv2 {
+    grid-column-start: 1;
+    grid-row-start: 6;
+    grid-row-end: 7;
+   }
+
+    .projectdiv3 {
+    grid-column-start: 1;
+    grid-row-start: 8;
+    grid-row-end: 9;
    }
 
     footer {
@@ -131,11 +182,7 @@ nav {
         justify-content: center;
         align-content: center;
     }
-    h3 {
-        display: flex;
-        justify-content: center;
-        align-content: center;
-    }
+
 
     section>p {
         text-align: center;
@@ -156,38 +203,12 @@ nav {
         margin-right: auto;
         width: 50%;
     }
-    .projectdiv1 {
-        grid-column-start: 1;
-        grid-row-start: 4;
-        grid-row-end: 5;
-       }
-     
-    .projectdiv2 {
-        grid-column-start: 1;
-        grid-row-start: 6;
-        grid-row-end: 7;
-       }
-    .projectdiv3 {
-        grid-column-start: 1;
-        grid-row-start: 8;
-        grid-row-end: 9;
-       }
-    .projectimg1 {
-        grid-column-start: 1;
-        grid-row-start: 3;
-        grid-row-end: 4;
-       }
-    .projectimg2 {
-        grid-column-start: 1;
-        grid-row-start: 5;
-        grid-row-end: 6;
+    
+    .projectdiv1, .projectdiv2, .projectdiv3 {
+        text-align: center;
+        
     }
-    .projectimg3 {
-        grid-column-start: 1;
-        grid-row-start: 7;
-        grid-row-end: 8;
-    }
-  
+    
     .projectimg1, .projectimg2, .projectimg3{
         width: 25%;
         display: block;
@@ -230,7 +251,7 @@ nav {
 @media only screen and (min-width: 768px) {
     .wrapper {
         display: grid;
-        grid-template-columns: 115px 3fr 1fr 1fr;
+        grid-template-columns: 115px 3fr 2fr;
         grid-template-rows: auto ;
         margin:0;
         max-height: 100vh;
@@ -254,11 +275,13 @@ nav {
 
     main {
         grid-column-start: 2;
-        grid-column-end: 3;
+        grid-column-end: 4;
         grid-row-start: 2;
         grid-row-end: 5;
    }
+
    .projectdiv1 {
+   
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 2;
@@ -266,6 +289,7 @@ nav {
    }
  
    .projectdiv2 {
+  
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 3;
@@ -273,6 +297,7 @@ nav {
    }
  
    .projectdiv3 {
+  
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 4;
@@ -335,6 +360,7 @@ nav {
         padding-left:118px;
         border: 2px solid #E0B400;
         border-right: none;
+        border-bottom: none;
     }
     .image1 {
         float: left;
@@ -363,7 +389,10 @@ nav {
         width: 250px;
         height: 250px;
     }
-
+    .projectdiv1, .projectdiv2, .projectdiv3 {
+        padding-left: 40px;
+        
+    }
     footer {
         position: fixed;
         border-top: solid 2px #E0B400;
