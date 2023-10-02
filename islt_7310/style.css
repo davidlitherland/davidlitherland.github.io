@@ -16,6 +16,14 @@ h3 {
     font-family: 'Montserrat';
 }
 
+h4 {
+    font-family: 'Montserrat';
+}
+
+h5 {
+    font-family: 'Montserrat';
+}
+
 p{
     font-family: 'Vollkorn';
 }
@@ -23,10 +31,19 @@ p{
 blockquote {
     font-family: 'Vollkorn';
 }
+
+ul{
+    font-family: 'Vollkorn';
+}
+
+h5>ul {
+    font-size: small;
+}
 nav {
     background-image: url(images/navbackground.png);
     background-size: cover;
 }
+
 .footericon {
     width: 1em;
     height: 1em;
@@ -52,7 +69,8 @@ nav {
 @media only screen and (max-width: 767px) {
     .wrapper {
         display: grid;
-        grid-template-rows: 10vh 5vh 85vh;
+        grid-template-columns: 100vw;
+        grid-template-rows: 10vh 5vh 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
         margin:0;
         max-height: 100vh;
     }
@@ -76,7 +94,7 @@ nav {
     main {
         grid-column-start: 1;
         grid-row-start: 3;
-        grid-row-end: 3;
+        grid-row-end: 8;
    }
 
     footer {
@@ -138,6 +156,45 @@ nav {
         margin-right: auto;
         width: 50%;
     }
+    .projectdiv1 {
+        grid-column-start: 1;
+        grid-row-start: 4;
+        grid-row-end: 5;
+       }
+     
+    .projectdiv2 {
+        grid-column-start: 1;
+        grid-row-start: 6;
+        grid-row-end: 7;
+       }
+    .projectdiv3 {
+        grid-column-start: 1;
+        grid-row-start: 8;
+        grid-row-end: 9;
+       }
+    .projectimg1 {
+        grid-column-start: 1;
+        grid-row-start: 3;
+        grid-row-end: 4;
+       }
+    .projectimg2 {
+        grid-column-start: 1;
+        grid-row-start: 5;
+        grid-row-end: 6;
+    }
+    .projectimg3 {
+        grid-column-start: 1;
+        grid-row-start: 7;
+        grid-row-end: 8;
+    }
+  
+    .projectimg1, .projectimg2, .projectimg3{
+        width: 25%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     footer {
         position: fixed;
         bottom: 0;
@@ -173,8 +230,8 @@ nav {
 @media only screen and (min-width: 768px) {
     .wrapper {
         display: grid;
-        grid-template-columns: .4fr 5fr;
-        grid-template-rows: 5fr 90fr 5fr;
+        grid-template-columns: 115px 3fr 1fr 1fr;
+        grid-template-rows: auto ;
         margin:0;
         max-height: 100vh;
     }
@@ -185,40 +242,81 @@ nav {
 
     header {
         grid-column-start: 1;
-        grid-column-end: 4;
+        grid-column-end: 5;
         grid-row-start: 1;
     }
 
     nav{
         grid-column-start: 1; 
         grid-row-start: 1;  
-        grid-row-end: 4;
+        grid-row-end: 5;
     }
-    img{
-        grid-column-start: 1;
-        grid-row-start: 1;
-    }
+
     main {
         grid-column-start: 2;
         grid-column-end: 3;
         grid-row-start: 2;
-        grid-row-end: 3;
+        grid-row-end: 5;
+   }
+   .projectdiv1 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+   }
+ 
+   .projectdiv2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+   }
+ 
+   .projectdiv3 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+   }
+   
+   .projectimg1 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+   }
+
+   .projectimg2 {
+    grid-column-start: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+   }
+
+   .projectimg3 {
+    grid-column-start: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
    }
 
     footer {
         grid-column-start: 1;
-        grid-column-end: 4;
-        grid-row-start: 4;
+        grid-column-end: 3;
+        grid-row-start: 3;
     }
+
     nav{
         display:flex;
+        position: fixed;
         height:100%;
         flex-flow:column wrap;
         margin:0;
         background-color: #0C2857;
         z-index: 2;
+        width: 115px;
     }
-
+    header {
+        z-index: 3;
+    }
     h1 {
         color: white;
         font-family: 'Montserrat';
@@ -231,15 +329,13 @@ nav {
         margin: 0;
         padding: 0;
         height: 15vh;
-        /*align-content: flex-start;*/
     }
 
     main {
-        padding-left:2vw;
+        padding-left:118px;
         border: 2px solid #E0B400;
-        
+        border-right: none;
     }
-
     .image1 {
         float: left;
         width: 200px;
@@ -250,17 +346,29 @@ nav {
         width: 200px;
         height: 200px;
     }
+    
     .firstparagraph{
         text-indent: 0%;
     }
     section>p {
         text-indent: 2%;
     }
+   
+    h5>ul {
+        font-family: 'Vollkorn';
+        font-size: medium;
+        font-weight: normal;
+    }
+    .projectimg1, .projectimg2, .projectimg3{
+        width: 250px;
+        height: 250px;
+    }
+
     footer {
         position: fixed;
         border-top: solid 2px #E0B400;
         bottom: 0;
-        height: 3fr;
+        height: 54px;
         width: 100%;
         margin-top: auto;
         padding: 0;
