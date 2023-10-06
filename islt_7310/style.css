@@ -36,9 +36,27 @@ ul{
     font-family: 'Vollkorn';
 }
 
+caption {
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: large;
+}
+
+td {
+    font-family: 'Vollkorn';
+}
+th {
+    font-family: 'Montserrat';
+    background-color: #0C2857;
+    color:white;
+}
 h5>ul {
     font-size: medium;
     font-weight: normal;
+}
+tr:nth-child(odd) {
+    background-color: rgb(12, 40, 87, .7) ;
+    
 }
 
 nav {
@@ -177,7 +195,7 @@ nav {
         height: 10vh;
         /*align-content: flex-start;*/
     }
-    h2 {
+    h2, h3 {
         display: flex;
         justify-content: center;
         align-content: center;
@@ -201,7 +219,7 @@ nav {
         display: block;
         margin-left: auto;
         margin-right: auto;
-        width: 50%;
+        width: 35%;
     }
     
     .projectdiv1, .projectdiv2, .projectdiv3 {
@@ -215,7 +233,25 @@ nav {
         margin-left: auto;
         margin-right: auto;
     }
-
+    table {
+        width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    th {
+        text-align: left;
+    }
+    table, th, td {
+        border: 2px solid #E0B400;
+        border-collapse: collapse;
+    }
+    th, td {
+        padding: 10px;
+    }
+    caption{
+        padding-bottom: 25px;
+        padding-top: 25px;
+    }
     footer {
         position: fixed;
         bottom: 0;
@@ -239,12 +275,7 @@ nav {
         Font-size: 1.8rem;
         font-weight: bold;
     }
-    .edusection>p {
-            text-align: center;
-            justify-content: center;
-            text-indent: 0%;
-            font-size: 1.5rem;
-    }
+   
    
 }
 
@@ -417,7 +448,19 @@ nav {
         Font-size: 1.2rem;
         font-weight: bold;
     }
- 
+    table {
+        width: 600px;
+    }
+    th {
+        text-align: left;
+    }
+    table, th, td {
+        border: 2px solid #E0B400;
+        border-collapse: collapse;
+    }
+    th, td {
+        padding: 10px;
+    }
 }
 
 @media print {
