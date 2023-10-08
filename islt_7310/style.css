@@ -55,6 +55,7 @@ h5>ul {
     font-size: medium;
     font-weight: normal;
 }
+
 tr:nth-child(odd) {
     background-color: rgb(12, 40, 87, .7) ;
     
@@ -88,6 +89,8 @@ nav {
     display: block;
     margin: 0 auto;
 }
+
+
 
 .footericon:hover + .footericonbig {
     width: 200px;
@@ -123,6 +126,8 @@ nav {
         grid-column-start: 1;
         grid-row-start: 3;
         grid-row-end: 9;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
    }
    .projectdiv1 {
     grid-column-start: 1;
@@ -209,11 +214,21 @@ nav {
         align-content: center;
     }
 
-
     section>p {
         text-align: center;
         justify-content: center;
         text-indent: 0%;
+        font-size: 1.5rem;
+    }
+    main>p {
+        text-align: center;
+        justify-content: center;
+        text-indent: 0%;
+        font-size: 1.5rem;
+    }
+    blockquote {
+        text-align: center;
+        justify-content: center;
         font-size: 1.5rem;
     }
 
@@ -378,6 +393,7 @@ nav {
         grid-row-start: 3;
     }
 
+
     nav{
         display:flex;
         position: fixed;
@@ -391,6 +407,7 @@ nav {
     header {
         z-index: 3;
     }
+
     h1 {
         color: white;
         font-family: 'Montserrat';
@@ -410,6 +427,7 @@ nav {
         border: 2px solid #E0B400;
         border-right: none;
         border-bottom: none;
+        height: 100%;
     }
     .image1 {
         float: left;
